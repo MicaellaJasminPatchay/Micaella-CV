@@ -180,4 +180,10 @@ footer {
     font-size: 13px;
     padding: 0.3rem 0.5rem;
   }
+
+  #home {
+  padding-top: 80px; /* adjust this to match your header height */
 }
+
+}
+
