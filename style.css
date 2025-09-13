@@ -47,6 +47,8 @@ header {
   z-index: 10;
   background: rgba(15, 15, 30, 0.8);
   backdrop-filter: blur(5px);
+    height: 70px; /* set your navbar height */
+
 }
 
 nav {
@@ -146,8 +148,8 @@ footer {
   }
 
   .profile-pic {
-    width: 120px;
-  }
+position: relative;
+  z-index: 5;  }
 
   nav {
     flex-wrap: nowrap;      /* keep links in one row */
@@ -182,10 +184,13 @@ footer {
   }
 
   #home {
-  padding-top: 10px; /* adjust this to match your header height */
+  padding-top: 90px; /* adjust this to match your header height */
+    position: relative;
+  z-index: 5; 
 }
 
 }
+
 
 
 
