@@ -147,8 +147,9 @@ footer {
 /* Extra mobile fixes */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
   }
 
   section {
@@ -165,9 +166,9 @@ footer {
     font-size: 13px;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
+  nav a {
+    font-size: 14px;      /* scale down text */
+    padding: 6px 10px;
   }
 
   section h2 {
@@ -175,9 +176,10 @@ footer {
   }
 
   .profile-pic {
-    width: 100px;
+    width: 120px;
   }
 }
+
 
 
 
