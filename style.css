@@ -1,4 +1,15 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
 /* Reset */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 /* Smooth scroll */
@@ -124,3 +135,4 @@ footer {
   color: #a6c1ee;
   text-shadow: 0 0 5px #7f8cfa;
 }
+
