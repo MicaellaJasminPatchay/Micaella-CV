@@ -5,6 +5,12 @@
   .container {
     flex-direction: column;
     padding: 10px;
+    max-width: 1200px;
+  width: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -135,4 +141,5 @@ footer {
   color: #a6c1ee;
   text-shadow: 0 0 5px #7f8cfa;
 }
+
 
