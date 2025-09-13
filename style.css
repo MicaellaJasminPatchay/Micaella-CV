@@ -46,7 +46,7 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -10;  /* lower than everything */
+  z-index: 0;  /* lower than everything */
   pointer-events: none;
 }
 
@@ -86,6 +86,8 @@ section {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 5;
 }
 
 section h2 {
@@ -176,6 +178,7 @@ footer {
     width: 100px;
   }
 }
+
 
 
 
