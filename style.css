@@ -1,26 +1,14 @@
-@media (max-width: 768px) {
-  
-  body {
-    font-size: 14px;
-  }
-  .container {
-    flex-direction: column;
-    padding: 10px;
-    max-width: 1200px;
-  width: 100%;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Reset */
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 /* Smooth scroll */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Body & Space Background */
 body {
@@ -50,7 +38,6 @@ html, body {
   pointer-events: none;
 }
 
-
 /* Navbar */
 header {
   position: fixed;
@@ -67,12 +54,15 @@ nav {
   justify-content: center;
   padding: 1rem;
   gap: 2rem;
+  overflow-x: auto;       /* allows horizontal scroll on tiny screens */
+  white-space: nowrap;    /* prevents wrapping */
 }
 
 nav a {
   color: #a6c1ee;
   text-decoration: none;
   font-weight: bold;
+  flex-shrink: 0;         /* prevents shrinking on small screens */
 }
 
 nav a:hover {
@@ -144,12 +134,11 @@ footer {
   color: #a6c1ee;
   text-shadow: 0 0 5px #7f8cfa;
 }
+
 /* Extra mobile fixes */
 @media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
+  body {
+    font-size: 14px;
   }
 
   section {
@@ -159,16 +148,24 @@ footer {
   .profile-pic {
     width: 120px;
   }
+
+  nav {
+    flex-wrap: nowrap;      /* keep links in one row */
+    justify-content: flex-start;
+    gap: 1rem;
+    overflow-x: auto;       /* horizontal scroll */
+    padding: 1rem;
+  }
+
+  nav a {
+    font-size: 14px;
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 480px) {
   body {
     font-size: 13px;
-  }
-
-  nav a {
-    font-size: 14px;      /* scale down text */
-    padding: 6px 10px;
   }
 
   section h2 {
@@ -178,9 +175,9 @@ footer {
   .profile-pic {
     width: 120px;
   }
+
+  nav a {
+    font-size: 13px;
+    padding: 0.3rem 0.5rem;
+  }
 }
-
-
-
-
-
